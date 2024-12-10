@@ -1,0 +1,210 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Import Poppins from Google Fonts */
+    margin: 0;
+    padding: 0;
+    background: #f7f9fc; /* Light gray background for the entire page */
+}
+
+/* Updated Navigation Bar */
+.navbar {
+    display: flex;
+    flex-direction: column; /* Arrange content vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    height: 150px; /* Increased height */
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #007BFF, #0056b3); /* Gradient background */
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 15px 0 0 0; /* Add gap above navigation links */
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FFD700;
+}
+
+/* Adjust Logo/Title */
+.logo {
+    font-size: 24px; /* Larger font size */
+    font-weight: bold;
+    margin-bottom: 20px; /* Add spacing below the title */
+    text-align: center;
+}
+
+/* Section Layouts */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section:nth-child(even) {
+    background: #e9f5ff; /* Alternating background for sections */
+}
+
+/* About Us Section */
+/* Background for About Section */
+#about {
+    position: relative;
+    color: #fff; /* White text for contrast */
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
+    ), url('background-pattern.png'); /* Gradient with the background */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Optional: Decorative Image Styling */
+.decorative-icon {
+    position: absolute;
+    opacity: 0.1; /* Low opacity for a subtle effect */
+    width: 150px;
+    height: auto;
+    z-index: -1; /* Keeps it behind content */
+}
+
+.decorative-icon.left {
+    top: 20%;
+    left: 10%;
+}
+
+.decorative-icon.right {
+    bottom: 20%;
+    right: 10%;
+}
+
+#about img {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Box Design */
+.box {
+    border: none;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 600px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Styling */
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+form button {
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    background: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+.contact-image {
+    max-width: 100%; /* Ensures the image doesn’t exceed the container width */
+    max-height: 300px; /* Limits the image height to 300px */
+    display: block; /* Ensures proper alignment */
+    margin: 20px auto; /* Centers the image */
+    border-radius: 10px; /* Adds rounded corners for aesthetics */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+}
+#contact {
+    position: relative;
+    padding: 60px 20px;
+    text-align: center;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5), 
+        rgba(0, 0, 0, 0.5)
+    ), url('background-pattern.png'); /* Dark overlay with pattern */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white; /* White text for contrast */
+}
+
+
+
+.contact-image {
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Dark shadow for depth */
+}
+

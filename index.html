@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Clinic</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Healthcare Clinic</div>
+            <ul class="nav-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#bmi">BMI Calculator</a></li>
+                <li><a href="#enquiry">Enquiry</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about" class="section">
+        <div class="content">
+            <h1>About Us</h1>
+            <p>Welcome to Healthcare Clinic, your trusted partner in health and wellness. 
+                Our mission is to provide top-notch medical care tailored to meet the unique 
+                needs of our community. With a dedicated team of highly skilled healthcare 
+                professionals and state-of-the-art facilities, we ensure that every patient 
+                receives personalized attention and compassionate care. Whether you're 
+                here for a routine check-up or specialized treatment, we are committed to 
+                helping you achieve optimal health. At Healthcare Clinic, we prioritize your 
+                well-being and strive to create a supportive environment where you feel heard, 
+                cared for, and empowered in your healthcare journey.</p>
+            <img src="clinic-image.jpg" alt="Clinic Image" class="about-image">
+        </div>
+
+        <!-- Decorative Icons -->
+        <img src="stethoscope-icon.png" alt="Decorative Icon" class="decorative-icon left">
+        <img src="heart-icon.png" alt="Decorative Icon" class="decorative-icon right">
+    </section>
+    
+
+   <!-- BMI Calculator Section -->
+<section id="bmi" class="section">
+    <div class="content box">
+        <h1>BMI Calculator</h1>
+        <form id="bmi-form">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" placeholder="Enter your weight" required>
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" placeholder="Enter your height" required>
+            <button type="button" onclick="calculateBMI()">Calculate BMI</button>
+        </form>
+        <p id="bmi-result"></p>
+    </div>
+</section>
+
+<!-- Enquiry Section -->
+<section id="enquiry" class="section">
+    <div class="content box">
+        <h1>Enquiry</h1>
+        <form id="enquiry-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" placeholder="Your Enquiry" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="content">
+        <h1>Contact Us</h1>
+        <p>Phone: +123 456 7890</p>
+        <p>Email: info@healthcareclinic.com</p>
+        <img src="contact-image.jpg" alt="Contact Image" class="contact-image">
+    </div>
+</section>
+
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Healthcare Clinic. All rights reserved.</p>
+    </footer>
+</body>
+</html>
